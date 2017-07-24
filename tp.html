@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <style>
+  /* Note: Try to remove the following lines to see the effect of CSS positioning */
+  .affix {
+      top: 0;
+      width: 100%;
+  }
+
+  .affix + .container-fluid {
+      padding-top: 70px;
+  }
+ 
+h3{
+background-image:url(03.gif-c200);
+background-repeat:no-repeat;
+background-position:0px 1600px;
+background-size:100%;
+ 
+}
+#section1 {padding-top:0px;height:800px;color: #fff;background-color: #673ab7;}
+#section2 {padding-top:50px;height:900px;color: #fff; background-color: #673ab7;}
+#section3 {padding-top:50px;color: #fff; background-image:url(03.jpg); image-repeat:no-repeat; }
+  </style>
+</head>
+<body>
+
+<a href="#section1"><div class="container-fluid" style="height:670px; background-image:url(02.jpg);background-color:black; background-size:1370px 300px;background-repeat:no-repeat;
+background-position:0px 280px;">
+  <br><br><br><br><br><br><br><br><br><h1><center><font color='black' ></font></center></h1>
+  <h2 align="center"><font color='white' ><strong>Excuse never save a life<strong></font></h2>
+  <h2 align="center"><font color="white" size="10"><strong>BLOOD DONATION<br>DOES</strong></font></h2>
+  
+
+</div></a>
+<div id="section1">
+
+
+<div style="position:absolute;left:60px;top:770px;">
+    <h3><font color="black">Total Doner</font></h3>
+    <img src="05.jpg" alt="Bird" class="img-circle">
+    <h3><font color="black">I'm an adv</font></h3>
+  <?php
+	$servername = "localhost";
+    $user = "root";
+    $mysqlPassword = "";
+    $dbname="blood";
+    $link=mysqli_connect($servername,$user,$mysqlPassword,$dbname);
+	
+	$result=mysqli_query($link,"select * from doner");
+	$count=mysqli_num_rows($result);
+	echo $count;
+	?>
+  
+  
+  </div>
+<div style="position:absolute;left:440px;top:770px;">
+    <h3><font color="black">Total Request</font></h3>
+    <img src="06.jpg" alt="Bird" class="img-circle">
+	<?php
+     echo "Hello world!";
+    ?>
+	
+	
+    <h3><font color="black">I'm an adventurer</font></h3>
+  </div>
+ <div style="position:absolute;left:880px;top:770px;">
+    <h3><font color="black">Total Blood Bank</font></h3>
+    <img src="05.jpg" alt="Bird" class="img-circle">
+    <h3><font color="black">Total Blood Bank</font></h3>
+  </div>
+     
+  
+<span class="same-scroll brand-header text-center" style="margin-left:20px">
+<nav  class="navbar navbar-inverse" data-spy="affix" data-offset-top="685">
+  <ul class="nav navbar-nav">
+    <li class="active"><a href="#section1">Home </a></li>
+    <li ><a href="#section1">Search Donars</a></li>
+    <li data-toggle="modal" data-target="#myModal1"><a href="#myModal1">Register as Donar</a></li>
+    <li ><a href="#section2">Request Blood</a></li>
+<li><a href="#section3">Blood Tips</a></li>
+<li data-toggle="modal" data-target="#"><a href="#">Contact us</a></li>
+<li data-toggle="modal" data-target="#myModal2"><a href="#myModal2">Register as Organisation</a></li>
+   
+	</ul>
+</nav>
+</span>
+ <!-- </div> -->
+
+ <div id="myCarousel" class="carousel slide" data-ride="carousel" style="position:relative;left:0%;top:400px;">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      <div class="item active" align="center">
+        <h3><font color="black" style="align:center;left:500px;">New York</font></h3>
+          <p><font color="black" style="align:center;">The atmosphere in New York is lorem ipsum.</font></p>
+      </div>
+
+      <div class="item" align="center">
+        
+ 
+          <h3><font color="black">Chicago</h3>
+          <p><font color="black">Thank you, Chicago - A night we won't forget.</font></p>
+      </div>
+    
+      
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+</div>
+
+
+  
+
+
+
+
+
+ 
+</div> 
+ 
+
+<div id="section2" class="container-fluid" style="height:1000px">
+  <h1>Some text to enable scrolling</h1>
+  <h1>Some text to enable scrolling</h1>
+  <h1>Some text to enable scrolling</h1>
+  <h1>Some text to enable scrolling</h1>
+  <div style="height:1000px">
+  <h1>Some text to enable scrolling</h1>
+  <h1>Some text to enable scrolling</h1>
+  <h1>Some text to enable scrolling</h1>
+  <h1>Some text to enable scrolling</h1>
+  <h1>Some text to enable scrolling</h1></div>
+  
+</div>
+
+<div id="section3" class="container-fluid" style="height:1000px">
+<div class="container">
+  <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo1">Beat the myth</button>
+  <div id="demo1" class="collapse" >
+    Donating blood is safe and simple. It takes approximately 10-15 minutes to complete the blood donation process. Any healthy adult between 18 years and 60 years of age can donate blood. This is what you can expect when you are ready to donate blood:
+
+You walk into a reputed and safe blood donation centre or a mobile camp organized by a reputed institution.
+A few questions will be asked to determine your health status (general questions on health, donation history etc). Usually you will be asked to fill out a short form.
+Then a quick physical check will be done to check temperature, blood pressure, pulse and hemoglobin content in blood to ensure you are a healthy donor.
+If found fit to donate, then you will be asked to lie down on a resting chair or a bed. Your arm will be thoroughly cleaned. Then using sterile equipments blood will be collected in a special plastic bag. Approximately 350 ml of blood will be collected in one donation. Those who weigh more than 60 Kg can donate 450 ml of blood.
+Then you must rest and relax for a few minutes with a light snack and something refreshing to drink. Some snacks and juice will be provided.
+Blood will be separated into components within eight hours of donation
+The blood will then be taken to the laboratory for testing.
+Once found safe, it will be kept in special storage and released when required.
+The blood is now ready to be taken to the hospital, to save lives.
+  </div>
+  
+</div>
+<div class="container">
+  <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo2">Blood Groups</button>
+  <div id="demo2" class="collapse">
+   Blood type is determined by which antibodies and antigens the person's blood produces. An individual has two types of blood groups namely ABO-grouping and Rh-grouping. Rh is called as the Rhesus factor that has come to us from Rhesus monkeys.
+</br>
+Most humans are in the ABO blood group. The ABO group has four categories namely 
+1) A group 2) B group 3) O group and 4) AB group
+In the Rh- group, either the individual is said to be Rh- Negative or Rh- Positive.
+</br>
+Thus blood group of any human being will mainly fall in any one of the following groups. </br>
+A positive or A negative </br>
+B positive or B negative </br>
+O positive or O negative </br>
+AB positive or AB negative.</br>
+  </div>
+</div>
+
+<div class="container">
+  <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo3">DO donate blood, only if you satisfy all of the following conditions</button>
+  <div id="demo3" class="collapse">
+
+-	You are between age group of 18-60 years.</br>
+-	Your weight is 45 kgs or more.</br>
+-	Your hemoglobin is 12.5 gm% minimum.</br>
+-	Your last blood donation was 3 or more months earlier.</br>
+-	You are healthy and have not suffered from malaria, typhoid or other transmissible disease in the recent past.</br>
+
+  </div>
+</div>
+
+<div class="container">
+  <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo4">DO NOT donate blood, if you have any of the following conditions</button>
+  <div id="demo4" class="collapse">
+
+-	Cold / fever in the past 1 week.</br>
+-	Under treatment with antibiotics or any other medication.</br>
+-	Cardiac problems, hypertension, epilepsy, diabetes (on insulin therapy), history of cancer, chronic kidney or liver disease, bleeding tendencies, venereal disease etc.</br>
+-	Major surgery in the last 6 months.</br>
+-	Vaccination in the last 24 hours.</br>
+-	Had a miscarriage in the last 6 months or have been pregnant / lactating in the last one year.</br>
+-	Had fainting attacks during last donation.</br>
+-	Have regularly received treatment with blood products.</br>
+-	Shared a needle to inject drugs/ have history of drug addiction.</br>
+-	Had sexual relations with different partners or with a high risk individual.</br>
+-	Been tested positive for antibodies to HIV.</br>
+
+  </div>
+</div>
+
+</div>
+
+
+
+
+ <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">SIGNUP</h4>
+        </div>
+			 <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+  <div class="modal fade" id="myModal1" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title"> Blood Bank</h4>
+        </div>
+
+		<div class="container" style=" width: inherit;">
+        <h2>Personal Signup</h2>
+		<form role="form"  class="form-signin" action="p04.php" method="post">
+		<div  class="form-group">
+        		
+		<label for="fname" class="col-sm-2 control-label">Frist Name:</label>
+		
+		<input type="text" class="form-control" name="fname" placeholder="First Name">
+		</div>
+		<div  class="form-group">
+		<label for="lname">Last Name:</label>
+		<input type="text" class="form-control" name="lname" placeholder="Last Name">
+		</div>
+
+    </br>
+	
+		<div  class="form-group">
+		<label for="em">E-mail</label>
+		<input type="email" class="form-control" name="em" placeholder="Email address">
+		</div>
+		<div  class="form-group">
+		
+		<label for="pwd">Password:</label>
+		<input type="password" class="form-control" name="pwd" placeholder="Enter password">
+		</div>
+		<div class="form-group">
+		<div class="col-sm-10 col-sm-offset-2">
+			<input  name="submit" type="submit" value="submit" class="btn btn-primary">
+		</div>
+	</div>
+     </form>
+    </div>
+	    <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+    </div>
+    </div>
+      
+    </div>
+</div>
+  
+  
+  
+ <div class="modal fade" id="myModal2" role="dialog">
+    <div class="modal-dialog">
+    
+     <!-- Modal content-->
+    <div class="modal-content">
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title"> Blood Bank</h4>
+    </div>
+
+	<div class="container" style=" width: inherit;">
+        <h3>Organisation Signup</h3>
+		<form role="form"  class="form-horizontal">
+	 <div >
+		<label for="fname">Organisation Name:</label>
+		<input type="text" class="form-control" id="oname" placeholder="Organisation Name">
+		<label for="lname">Organisation ID</label>
+		<input type="text" class="form-control" id="oid" placeholder="Organisation Unique ID">
+	 </div>
+
+    
+	<div >
+
+	     <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Organisation Type
+         <select class="form-control"  id="orgt">
+         <option value="private">Private</option>
+         <option value="goverment">Goverment</option>
+    </select>
+    </div>
+    
+    <div>
+	    <label for="lname">Organisation Address</label>
+		<input type="text" class="form-control" id="oadd" placeholder="Address">
+		<label for="lname">city</label>
+		<input type="text" class="form-control" id="oadd" placeholder="ocity">
+        <label for="lname">PIN Code</label>
+		<input type="text" class="form-control" id="opin" placeholder="Pincode">
+		<label for="lname">Contact No </label>
+		<input type="text" class="form-control" id="ocno" placeholder="Contact NO">
+	</div>
+
+		<div><label for="em">E-mail</label>
+		<input type="email" class="form-control" id="oem" placeholder="Email address">
+		</div>
+		<div >
+		<label for="pwd">Password:</label>
+		<input type="password" class="form-control" id="opwd" placeholder="Enter password">
+		</div>
+		<div class="checkbox">
+		<label><input type="checkbox"> Accept term and condition</label>
+		</div>
+		</br></br>
+		<button type="submit" class="btn btn-default">Submit</button>
+  </form>
+</div>
+  
+  
+  
+  <script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links in navbar + footer link
+  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+
+  // Make sure this.hash has a value before overriding default behavior
+  if (this.hash !== "") {
+
+    // Prevent default anchor click behavior
+    event.preventDefault();
+
+    // Store hash
+    var hash = this.hash;
+
+    // Using jQuery's animate() method to add smooth page scroll
+    // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+    $('html, body').animate({
+      scrollTop: $(hash).offset().top
+    }, 900, function(){
+
+      // Add hash (#) to URL when done scrolling (default click behavior)
+      window.location.hash = hash;
+      });
+    } // End if 
+  });
+})
+</script>
+</body>
+</html>
+
